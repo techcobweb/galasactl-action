@@ -1,0 +1,13 @@
+# action.yml
+name: 'galasactl Galasa command-line tool'
+description: 'Use the galasactl tool from Galasa'
+inputs:
+  galasactl-args:  
+    description: 'Arguments passed to the galasactl tool'
+    required: true
+runs:
+  using: 'docker'
+  image: 'Dockerfile'
+  args:
+    - ${{ inputs.galasactl-args }}
+  
