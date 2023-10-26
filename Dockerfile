@@ -1,5 +1,9 @@
 # Container image that runs your code
-FROM busybox:latest
+FROM ubuntu:latest
+
+RUN  apt-get update \
+  && apt-get install -y wget \
+  && rm -rf /var/lib/apt/lists/*
 
 RUN mkdir /app && \
     wget -P /app/galasactl https://github.com/galasa-dev/cli/releases/download/v0.30.0/galasactl-linux-x86_64 && \
