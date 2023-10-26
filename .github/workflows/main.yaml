@@ -7,7 +7,7 @@ jobs:
     steps:
       - name: which version of galasactl are we using
         id: galasacrl-version
-        uses: techcobweb/galasactl-action@v3
+        uses: techcobweb/galasactl-action@v5
         with:
           galasactl-args: |
             '--version'
