@@ -2,3 +2,4 @@
 
 echo "Entry point called"
 echo "Parameters: $*"
+/app/galasactl $*
