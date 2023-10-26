@@ -1,0 +1,16 @@
+on: [push]
+
+jobs:
+  galasactl-version-job:
+    runs-on: ubuntu-latest
+    name: A job to invoke galasactl
+    steps:
+      - name: which version of galasactl are we using
+        id: galasacrl-version
+        uses: techcobweb/galasactl-action@v1
+        with:
+          galasactl-args: |
+            '--version'
+
+    #   - name: Get the output time
+    # run: echo "The time was ${{ steps.hello.outputs.time }}"
