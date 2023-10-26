@@ -10,7 +10,7 @@ jobs:
         uses: techcobweb/galasactl-action@v5
         with:
           galasactl-args: |
-            '--version'
+            - --version
 
     #   - name: Get the output time
     # run: echo "The time was ${{ steps.hello.outputs.time }}"

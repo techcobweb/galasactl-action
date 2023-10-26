@@ -6,6 +6,6 @@ Github action for galasactl tool
 
 ## To publish a version of this action
 ```
-git tag -a -m "My first action release" v1
+git tag -a -m "v5" v5
 git push --follow-tags
 ```
