@@ -6,8 +6,8 @@ inputs:
     description: 'Arguments passed to the galasactl tool'
     required: true
 runs:
-  using: 'docker'
-  image: 'Dockerfile'
+  using: docker
+  image: ghio.techcobweb/galasactl-image:main
   args:
     - ${{ inputs.galasactl-args }}
   
