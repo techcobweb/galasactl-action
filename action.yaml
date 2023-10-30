@@ -7,7 +7,7 @@ inputs:
     required: true
 runs:
   using: docker
-  image: ghio.techcobweb/galasactl-image:main
+  image: ghio/techcobweb/galasactl-image:main
   args:
     - ${{ inputs.galasactl-args }}
   
