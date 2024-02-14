@@ -18,7 +18,7 @@ RUN cd /app &&\
   wget -O galasactl-0.31.0 https://github.com/galasa-dev/cli/releases/download/v0.31.0/galasactl-linux-x86_64 &&\
   chmod +x galasactl-0.31.0
 
-COPY entry-point.sh /app
+COPY /entry-point.sh /app
 RUN chmod +x /app/entry-point.sh
 
 # Code file to execute when the docker container starts up (`entrypoint.sh`)
