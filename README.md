@@ -14,7 +14,7 @@ jobs:
     steps:
       - name: which version of galasactl are we using
         id: galasacrl-version
-        uses: techcobweb/galasactl-action@v0.30.0
+        uses: techcobweb/galasactl-action@v6
         with:
           galasactl-args: |
             - --version
@@ -26,7 +26,13 @@ Note: the galasactl-args is a list of arguments, which are all passed directly t
 
 ## To publish a version of this action
 ```
-export VERSION="0.30.0"
-git tag -fa -m "v$VERSION" v$VERSION
+export VERSION="6"
+git tag -fa -m "v$VERSION" "v$VERSION"
 git push --follow-tags
+```
+
+## To delete a tag you previously created
+```
+export VERSION="6"
+git push --delete origin "v$VERSION"
 ```
