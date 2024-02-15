@@ -20,7 +20,7 @@ if [[ ${supported_versions[@]} =~ $GALASA_VERSION ]]; then
 else 
     echo "Error: Unsupported version of Galasa tool requested ('$GALASA_VERSION}')"
     exit 1
-esac
+fi
     
 # Invoke the appropriate version of the tool.
 /galasa/galasactl-${GALASA_VERSION} $*
