@@ -1,6 +1,8 @@
 # galasactl-action
 Github action for galasactl tool
 
+
+
 ## Syntax
 To use the action within a workflow:
 
@@ -26,7 +28,7 @@ Note: the galasactl-args is a list of arguments, which are all passed directly t
 
 ## To publish a version of this action
 ```
-export VERSION="8"
+export VERSION="10"
 git tag -fa -m "v$VERSION" "v$VERSION"
 git push --follow-tags
 ```
