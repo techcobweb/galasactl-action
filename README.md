@@ -28,7 +28,8 @@ Note: the galasactl-args is a list of arguments, which are all passed directly t
 
 ## To publish a version of this action
 ```
-export VERSION="14"
+export VERSION="0.31.0"
+git push --delete origin "v$VERSION"
 git tag -fa -m "v$VERSION" "v$VERSION"
 git push --follow-tags
 ```
