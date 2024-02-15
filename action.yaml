@@ -5,9 +5,13 @@ inputs:
   galasactl-args:  
     description: 'Arguments passed to the galasactl tool'
     required: true
+  galasactl-version:
+    description: 'The version of the galasactl tool you want to use. Defaults to main otherwise.'
+    required: false
+    default: main
 runs:
   using: docker
-  image: docker://ghcr.io/techcobweb/galasactl-image:main
+  image: docker://ghcr.io/techcobweb/galasactl-image:${{ inputs.galasactl-version }}
   args:
     - ${{ inputs.galasactl-args }}
   
