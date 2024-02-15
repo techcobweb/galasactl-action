@@ -5,11 +5,11 @@ RUN  apt-get update \
   && apt-get install -y wget \
   && rm -rf /var/lib/apt/lists/*
 
-RUN mkdir -p /app  &&\
-  chmod 0777 /app
+RUN mkdir -p /galasa  &&\
+  chmod 0777 /galasa
 
 COPY entry-point.sh /galasa
-RUN chmod +x /app/entry-point.sh
+RUN chmod +x /galasa/entry-point.sh
 
 # Code file to execute when the docker container starts up (`entrypoint.sh`)
 ENTRYPOINT ["/galasa/entry-point.sh"]
