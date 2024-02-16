@@ -2,17 +2,15 @@
 name: 'galasactl Galasa command-line tool'
 description: 'Use the galasactl tool from Galasa'
 inputs:
-  galasactl-args:  
+  galasactl_args:  
     description: 'Arguments passed to the galasactl tool'
     required: true
-  galasactl-version:
+  galasactl_version:
     description: 'The version of the galasactl tool you want to use. Defaults to main otherwise.'
     required: false
-    default: main
+    default: latest
 runs:
   using: docker
-  image: docker://icr.io/galasadev/galasa-cli-amd64:${{inputs.galasactl-version}}
-  entrypoint: /bin/galasactl
-  args:
-    - ${{ inputs.galasactl-args }}
+  image: Dockerfile
+
   
