@@ -11,7 +11,7 @@ inputs:
     default: main
 runs:
   using: docker
-  image: docker://icr.io/galasadev/galasa-cli-amd64:${{env.galasactl-version}}
+  image: docker://icr.io/galasadev/galasa-cli-amd64:${{inputs.galasactl-version}}
   entrypoint: /bin/galasactl
   args:
     - ${{ inputs.galasactl-args }}
