@@ -1,3 +1,3 @@
 #!/usr/bin/env bash
 
-exec docker run -v "/var/run/docker.sock":"/var/run/docker.sock" --entrypoint=$INPUT_SHELL icr.io/galasadev/galasa-cli-amd64:$INPUT_GALASACTL_VERSION -c "bin/galasactl --version'\n'/;}"
+exec docker run -v "/var/run/docker.sock":"/var/run/docker.sock" --entrypoint=$INPUT_SHELL icr.io/galasadev/galasa-cli-amd64:$GALASACTL_VERSION -c "bin/galasactl --version'\n'/;}"
