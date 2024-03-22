@@ -1,11 +1,11 @@
 # action.yml
-name: 'galasactl Galasa command-line tool'
+name: 'Galasa galasactl command-line tool usable as a github action'
 description: 'Use the galasactl tool from Galasa'
 inputs:
-  galasactl_args:  
+  galasactl-args:  
     description: 'Arguments passed to the galasactl tool'
     required: true
-  galasactl_version:
+  galasactl-version:
     description: 'The version of the galasactl tool you want to use. Defaults to main otherwise.'
     required: false
     default: latest
