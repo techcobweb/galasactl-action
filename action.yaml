@@ -9,7 +9,7 @@ inputs:
     description: 'The version of the galasactl tool you want to use. Defaults to main otherwise.'
     required: false
     default: latest
-  docker_options:
+  docker-options:
     description: 'A list of options passed to docker. For example -v to mount a volume to collect results'
 runs:
   using: docker

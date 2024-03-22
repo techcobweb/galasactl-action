@@ -33,6 +33,5 @@ export VERSION="1" && git push --delete origin "v$VERSION" && git tag -fa -m "v$
 
 ## To delete a tag you previously created
 ```
-export VERSION="1"
-git push --delete origin "v$VERSION"
+export VERSION="1" && git push --delete origin "v$VERSION"
 ```
