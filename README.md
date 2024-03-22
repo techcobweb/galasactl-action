@@ -15,10 +15,10 @@ jobs:
     name: A job to invoke galasactl
     steps:
       - name: which version of galasactl are we using
-        id: galasacrl-version
+        id: galasactl-version
         uses: techcobweb/galasactl-action@v6
         with:
-          galasactl-args: |
+          galasactl_args: |
             - --version
 ```
 Note: the galasactl-args is a list of arguments, which are all passed directly to the `galasactl` command as described in the https://galasa.dev documentation.
